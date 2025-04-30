@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+
+    --btn-color: #fdfdfd;/* button color*/
+    --btn-bg: #155eef;/* button bg color*/
+
+    --primary-text-color: #155eef;
+    --link-hover: #155eef;
+    --input-hover-bd-color: #155eef;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    /* background-color: #fff;
+    color: #000; */
+}
+
+
+
+.primary-text-color{
+    color: var(--primary-text-color);
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+  
+  .project-card {
+    background-color: var(--tw-bg);
+    color: var(--tw-text);
+    border: 2px solid var(--tw-prose-invert-links, var(--tw-color-primary));
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tw-color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .card-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--tw-text-muted, #4b5563);
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card-btn.primary {
+    background-color: var(--tw-color-primary);
+  }
+  
+  .card-btn.secondary {
+    background-color: var(--tw-color-secondary, #6b7280);
+  }
+  
+  .card-btn:hover {
+    filter: brightness(90%);
+  }
+  
+  /* Dark mode adjustments */
+  [data-mode='dark'] .card-desc {
+    color: #cbd5e1;
+  }
+  
+  
